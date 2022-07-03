@@ -48,6 +48,7 @@ export const MriUnits = () => {
                 href={unit.url}
                 target='_blank'
                 rel='noreferrer'
+                className='mri-unit-link'
               >
                 {unit.url}
               </List.Content>

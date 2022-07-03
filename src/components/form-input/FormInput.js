@@ -16,7 +16,10 @@ export const FormInput = () => {
           <Header as='h3' color='grey'>
             Paste the MRI List
           </Header>
-          <TextArea placeholder='Insert MRI Units List' />
+          <TextArea
+            placeholder='Insert MRI Units List'
+            className='action-textarea'
+          />
           <p>
             <Button animated='vertical' icon labelPosition='left' color='green'>
               <Button.Content hidden>Test</Button.Content>

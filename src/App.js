@@ -8,7 +8,7 @@ function App() {
     <>
       <div className='App'>
         <Header size='huge' color='grey'>
-          MRI Units - Tests 🧪
+          MRI UNITS - TESTS 🧪
         </Header>
         <MriUnits />
       </div>
