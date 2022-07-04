@@ -5,14 +5,12 @@ import { Header } from 'semantic-ui-react'
 
 function App() {
   return (
-    <>
-      <div className='App'>
-        <Header size='huge' color='grey'>
-          MRI UNITS - TESTS 🧪
-        </Header>
-        <MriUnits />
-      </div>
-    </>
+    <div className='App'>
+      <Header size='huge' color='grey'>
+        MRI UNITS - TESTS 🧪
+      </Header>
+      <MriUnits />
+    </div>
   )
 }
 

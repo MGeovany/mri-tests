@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+
 export const mriLinks = [
   `https://ad1-il-000353.ooh-prod.linksvc.com:2443/
 https://ad1-il-000349.ooh-prod.linksvc.com:2443/

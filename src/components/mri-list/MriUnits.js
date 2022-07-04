@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FormInput } from '../form-input/FormInput'
 import { List, Container } from 'semantic-ui-react'
+import { useDispatch, useSelector } from 'react-redux'
+import { addLink, selectLink } from '../../store/mrilist/linksSlice'
+
 const unitsInput = [
   `https://ad1-il-000353.ooh-prod.linksvc.com:2443/
 https://ad1-il-000349.ooh-prod.linksvc.com:2443/
@@ -28,32 +31,50 @@ https://ad2-il-000214.ooh-prod.linksvc.com:2443/`
 ]
 
 export const MriUnits = () => {
-  const data = unitsInput.splice(0, 1)[0]
+  const [enlace, setEnlace] = useState('')
 
-  const units = data.split('\n').map((unit) => {
-    const [url, ...rest] = unit.split(' ')
-    return { url, ...rest }
-  })
+  const dispatch = useDispatch()
+  const links = useSelector((state) => state.links)
+  // const links = useSelector(selectLink)
+
+  const getMriUnits = () => {
+    const data = unitsInput.splice(0, 1)[0]
+    setEnlace(
+      data.split('\n').map((unit) => {
+        const [url, ...rest] = unit.split(' ')
+        dispatch(addLink({ url, ...rest }))
+
+        return { url, ...rest }
+      })
+    )
+
+    // enlace.map((unit) => console.log('unitt 0map', unit))
+
+    // console.log('units', units)
+  }
+
+  useEffect(() => {
+    getMriUnits()
+    console.log('units', enlace)
+  }, [])
+
+  // console.log('links mri', links)
+  // console.log('unitssss', unitss)
+  // console.log('unitssss', unitss)
 
   return (
     <div>
       <Container fluid>
         <FormInput />
         <List divided verticalAlign='middle' size='small' rotated='clockwise'>
-          {units.map((unit, index) => (
-            <List.Item key={index}>
-              <List.Icon name='linkify' color='green' />
-              <List.Content
-                as='a'
-                href={unit.url}
-                target='_blank'
-                rel='noreferrer'
-                className='mri-unit-link'
-              >
-                {unit.url}
-              </List.Content>
-            </List.Item>
-          ))}
+          {links &&
+            links.map((link, index) => (
+              <List.Item key={index}>
+                <List.Content>
+                  <List.Header>{link.url}</List.Header>
+                </List.Content>
+              </List.Item>
+            ))}
         </List>
       </Container>
     </div>
