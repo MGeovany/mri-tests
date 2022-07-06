@@ -1,30 +1,7 @@
 /* eslint-disable no-undef */
 
 export const mriLinks = [
-  `https://ad1-nj-001036.ooh-prod.linksvc.com:2443/
-https://ad2-nj-001036.ooh-prod.linksvc.com:2443/
-https://ad1-ca-000037.ooh-prod.linksvc.com:2443/
-https://ad2-ca-000037.ooh-prod.linksvc.com:2443/
-https://ad1-pa-001580.ooh-prod.linksvc.com:2443/
-https://ad1-il-001545.ooh-prod.linksvc.com:2443/
-https://ad2-il-000186.ooh-prod.linksvc.com:2443/
-https://ad1-il-001555.ooh-prod.linksvc.com:2443/
-https://ad2-il-000235.ooh-prod.linksvc.com:2443/
-https://ad1-pa-000161.ooh-prod.linksvc.com:2443/
-https://ad1-il-000150.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057649.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057649.ooh-prod.linksvc.com:2443/
-https://ad1-il-000233.ooh-prod.linksvc.com:2443/
-https://ad2-il-000233.ooh-prod.linksvc.com:2443/
-https://ad1-il-000288.ooh-prod.linksvc.com:2443/
-https://ad2-il-000288.ooh-prod.linksvc.com:2443/
-https://ad2-il-000316.ooh-prod.linksvc.com:2443/
-https://ad1-il-000316.ooh-prod.linksvc.com:2443/
-https://ad1-il-000235.ooh-prod.linksvc.com:2443/
-https://ad1-pa-000052.ooh-prod.linksvc.com:2443/
-https://ad1-nj-000004.ooh-prod.linksvc.com:2443/
-https://ad2-il-000150.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057568.ooh-prod.linksvc.com:2443/
+  `https://ad1-ny-057568.ooh-prod.linksvc.com:2443/
 https://ad1-ny-057569.ooh-prod.linksvc.com:2443/
 https://ad2-ny-057569.ooh-prod.linksvc.com:2443/
 https://ad1-ny-057641.ooh-prod.linksvc.com:2443/
@@ -59,8 +36,7 @@ https://ad2-pa-000116.ooh-prod.linksvc.com:2443/
 https://ad1-pa-000156.ooh-prod.linksvc.com:2443/
 https://ad1-pa-000139.ooh-prod.linksvc.com:2443/
 https://ad1-pa-001907.ooh-prod.linksvc.com:2443/
-https://ad1-pa-000084.ooh-prod.linksvc.com:2443/
-https://ad1-mn-000010.ooh-prod.linksvc.com:2443/ `
+https://ad1-pa-000084.ooh-prod.linksvc.com:2443/`
 ]
 
 describe('Test Broken Links', () => {
