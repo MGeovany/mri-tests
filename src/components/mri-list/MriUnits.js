@@ -1,8 +1,9 @@
+/* eslint-disable multiline-ternary */
 import React, { useState, useEffect } from 'react'
 import { FormInput } from '../form-input/FormInput'
 import { List, Container } from 'semantic-ui-react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addLink, selectLink } from '../../store/mrilist/linksSlice'
+import { addLink } from '../../store/mrilist/linksSlice'
 
 const unitsInput = [
   `https://ad1-il-000353.ooh-prod.linksvc.com:2443/
@@ -29,16 +30,20 @@ https://ad2-il-000202.ooh-prod.linksvc.com:2443/
 https://ad1-il-000214.ooh-prod.linksvc.com:2443/
 https://ad2-il-000214.ooh-prod.linksvc.com:2443/`
 ]
+const testResults = [
+  `1) 0. URL: https://ad1-il-000353.ooh-prod.linksvc.com:2443/
+√ 1. URL: https://ad1-il-000349.ooh-prod.linksvc.com:2443/ (1172ms)
+2) 2. URL: https://ad2-il-000349.ooh-prod.linksvc.com:2443/`
+]
 
 export const MriUnits = () => {
   const [enlace, setEnlace] = useState('')
 
   const dispatch = useDispatch()
   const links = useSelector((state) => state.links)
-  // const links = useSelector(selectLink)
 
-  const getMriUnits = () => {
-    const data = unitsInput.splice(0, 1)[0]
+  const getMriUnits = (input) => {
+    const data = input.splice(0, 1)[0]
     setEnlace(
       data.split('\n').map((unit) => {
         const [url, ...rest] = unit.split(' ')
@@ -47,20 +52,13 @@ export const MriUnits = () => {
         return { url, ...rest }
       })
     )
-
-    // enlace.map((unit) => console.log('unitt 0map', unit))
-
-    // console.log('units', units)
   }
 
   useEffect(() => {
-    getMriUnits()
-    console.log('units', enlace)
-  }, [])
+    getMriUnits(testResults)
 
-  // console.log('links mri', links)
-  // console.log('unitssss', unitss)
-  // console.log('unitssss', unitss)
+    console.log('enlace: ', enlace)
+  }, [])
 
   return (
     <div>
@@ -71,7 +69,9 @@ export const MriUnits = () => {
             links.map((link, index) => (
               <List.Item key={index}>
                 <List.Content>
-                  <List.Header>{link.url}</List.Header>
+                  <List.Header>
+                    {link.url === '√' ? <div>YES</div> : <div>NO</div>}
+                  </List.Header>
                 </List.Content>
               </List.Item>
             ))}
