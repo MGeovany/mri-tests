@@ -1,42 +1,22 @@
 /* eslint-disable no-undef */
 
 export const mriLinks = [
-  `https://ad1-ny-057568.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057569.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057569.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057641.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057641.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057633.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057633.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057644.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057644.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057638.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057638.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057639.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057639.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057642.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057642.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057643.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057643.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057646.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057646.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057645.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057645.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057640.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057640.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057637.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057637.ooh-prod.linksvc.com:2443/
-https://ad2-ny-057647.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057647.ooh-prod.linksvc.com:2443/
-https://ad1-ny-057564.ooh-prod.linksvc.com:2443/
-https://ad1-pa-000118.ooh-prod.linksvc.com:2443/
+  `https://ad1-pa-000118.ooh-prod.linksvc.com:2443/
 https://ad2-pa-000118.ooh-prod.linksvc.com:2443/
 https://ad1-pa-000116.ooh-prod.linksvc.com:2443/
 https://ad2-pa-000116.ooh-prod.linksvc.com:2443/
 https://ad1-pa-000156.ooh-prod.linksvc.com:2443/
 https://ad1-pa-000139.ooh-prod.linksvc.com:2443/
 https://ad1-pa-001907.ooh-prod.linksvc.com:2443/
-https://ad1-pa-000084.ooh-prod.linksvc.com:2443/`
+https://ad1-pa-000084.ooh-prod.linksvc.com:2443/
+https://ad1-mn-000010.ooh-prod.linksvc.com:2443/
+https://ad1-pa-000063.ooh-prod.linksvc.com:2443/
+https://ad1-pa-000188.ooh-prod.linksvc.com:2443/
+https://ad1-pa-000182.ooh-prod.linksvc.com:2443/
+https://ad1-pa-000130.ooh-prod.linksvc.com:2443/
+https://ad2-pa-000130.ooh-prod.linksvc.com:2443/
+https://ad1-ny-057565.ooh-prod.linksvc.com:2443/
+https://ad1-ca-001034.ooh-prod.linksvc.com:2443/`
 ]
 
 describe('Test Broken Links', () => {
